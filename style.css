@@ -165,32 +165,9 @@ img {
   font-size: 16px;
   line-height: 1.85;
   color: var(--soft-text);
-  margin-bottom: 38px;
+  margin-bottom: 8px;
 }
 
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.hero-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 120px;
-  padding: 12px 28px;
-  border: 1px solid var(--text);
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  transition: all 0.25s ease;
-}
-
-.hero-btn:hover {
-  background: var(--text);
-  color: var(--white);
-}
 
 /* Brand Statement */
 .brand-statement {
