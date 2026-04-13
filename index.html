@@ -1,41 +1,139 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>珠宝展示</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>灵珑 LINGLONG</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="logo.png" alt="灵珑 LINGLONG" class="logo">
-            <p class="subtitle">灵韵所至，珑光所藏</p>
-            <p class="subtitle-2">一器一灵，映见东方之美</p>
-        </div>
-    </header>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="nav-left">
+        <a href="#lingzao">灵造</a>
+        <a href="#longcang">珑藏</a>
+        <a href="#about">关于</a>
+      </div>
 
-    <main class="container">
-        <div class="products-grid" id="productsGrid">
-            <!-- 产品将通过 JavaScript 动态加载 -->
-        </div>
-    </main>
+      <a href="#" class="brand-mark">灵珑 LINGLONG</a>
 
-    <footer>
-        <div class="container">
-            <div class="contact-section">
-                <h2>联系我们</h2>
-                <div class="contact-info">
-                    <p>📞 电话：138-0000-0000</p>
-                    <p>📧 邮箱：contact@jewelry.com</p>
-                    <p>📍 地址：北京市朝阳区珠宝街88号</p>
-                </div>
-                <button class="consult-btn" onclick="openConsult()">立即咨询</button>
-            </div>
-            <p class="copyright">&copy; 2026 珠宝精品. 保留所有权利.</p>
-        </div>
-    </footer>
+      <div class="nav-right">
+        <a href="#contact">联系</a>
+      </div>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="logo.jpg" alt="灵珑 LINGLONG" />
+      </div>
+      <div class="hero-overlay">
+        <p class="hero-kicker">LINGLONG JEWELRY</p>
+        <h1>东方灵韵<br />凝于方寸</h1>
+        <p class="hero-desc">
+          以克制而隽永的设计语言，呈现珠宝与东方气质的静谧光泽。
+        </p>
+        <a href="#lingzao" class="hero-btn">探索系列</a>
+      </div>
+    </section>
+
+    <!-- 品牌宣言 -->
+    <section class="brand-statement">
+      <div class="container">
+        <p>
+          我们相信珠宝不止于佩戴，更是气质、记忆与审美秩序的延伸。
+        </p>
+      </div>
+    </section>
+
+    <!-- 灵造 -->
+    <section class="editorial-section" id="lingzao">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-copy">
+            <p class="section-tag">COLLECTION</p>
+            <h2>LINGZAO</h2>
+            <p class="section-cn">灵造</p>
+            <p class="section-desc">
+              取意自然纹样与东方器物精神，以简净比例塑造温润、克制的佩戴体验。
+            </p>
+          </div>
+        </div>
+
+        <div class="products-grid" id="lingzaoGrid"></div>
+      </div>
+    </section>
+
+    <!-- 横幅 -->
+    <section class="feature-banner">
+      <div class="banner-image">
+        <div class="banner-content">
+          <p class="banner-tag">SIGNATURE EDIT</p>
+          <h2>发现属于你的灵韵之作</h2>
+          <a href="#longcang" class="banner-btn">继续浏览</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 珑藏 -->
+    <section class="editorial-section alt" id="longcang">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-copy">
+            <p class="section-tag">COLLECTION</p>
+            <h2>LONGCANG</h2>
+            <p class="section-cn">珑藏</p>
+            <p class="section-desc">
+              更具仪式感的珍藏之作，强调工艺、寓意与收藏价值，适合重要时刻与赠礼场景。
+            </p>
+          </div>
+        </div>
+
+        <div class="products-grid" id="longcangGrid"></div>
+      </div>
+    </section>
+
+    <!-- 品牌介绍 -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-title">
+          <h2>ABOUT</h2>
+        </div>
+        <div class="about-text">
+          <p>
+            灵珑希望把东方审美中的含蓄、秩序与温度，转译为当代佩戴语言。
+            我们不追求繁复堆叠，而关注材质、比例、留白与光泽之间的平衡。
+          </p>
+          <p>
+            每一件作品，既可日常相伴，也可在特殊时刻留下属于佩戴者的记忆。
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">灵珑 LINGLONG</p>
+        <p class="footer-slogan">灵韵所至，珑光所藏</p>
+      </div>
+
+      <div class="footer-contact">
+        <p>电话：13001126708</p>
+        <p>微信：xumudan78</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 灵珑珠宝. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
