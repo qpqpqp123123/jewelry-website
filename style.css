@@ -7,8 +7,8 @@
 body {
     font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: #f5f5f5;
+    color: #2c3e50;
+    background: #ffffff;
 }
 
 .container {
@@ -18,133 +18,168 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #ffffff;
+    color: #2c3e50;
     text-align: center;
-    padding: 60px 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 80px 20px 60px;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    letter-spacing: 3px;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    letter-spacing: 8px;
+    font-weight: 300;
+    color: #1a1a1a;
 }
 
 .subtitle {
-    font-size: 1.2em;
-    opacity: 0.9;
+    font-size: 1.1em;
+    color: #666;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 main {
-    padding: 60px 20px;
+    padding: 80px 20px;
+    background: #fafafa;
 }
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
 }
 
 .product-card {
     background: white;
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
     cursor: pointer;
+    border: 1px solid #f0f0f0;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 
 .product-image {
     width: 100%;
-    height: 280px;
+    height: 320px;
     object-fit: cover;
-    background: #f0f0f0;
+    background: #f8f8f8;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
 }
 
 .product-info {
-    padding: 20px;
+    padding: 25px;
+    text-align: center;
 }
 
 .product-name {
-    font-size: 1.3em;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #2c3e50;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    letter-spacing: 1px;
 }
 
 .product-price {
-    font-size: 1.5em;
-    color: #e74c3c;
-    font-weight: bold;
+    font-size: 1.4em;
+    color: #d4af37;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 footer {
-    background: #2c3e50;
-    color: white;
-    padding: 40px 20px 20px;
-    margin-top: 60px;
+    background: #1a1a1a;
+    color: #e8e8e8;
+    padding: 60px 20px 30px;
+    margin-top: 80px;
 }
 
 .contact-section {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .contact-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 3px;
 }
 
 .contact-info {
-    margin: 20px 0;
-    font-size: 1.1em;
+    margin: 30px 0;
+    font-size: 1.05em;
+    color: #b8b8b8;
 }
 
 .contact-info p {
-    margin: 10px 0;
+    margin: 15px 0;
+    letter-spacing: 1px;
 }
 
 .consult-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #1a1a1a;
     color: white;
-    border: none;
-    padding: 15px 40px;
-    font-size: 1.1em;
-    border-radius: 30px;
+    border: 2px solid white;
+    padding: 14px 50px;
+    font-size: 1em;
+    border-radius: 0;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin-top: 20px;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .consult-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    background: white;
+    color: #1a1a1a;
 }
 
 .copyright {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
     border-top: 1px solid rgba(255,255,255,0.1);
-    opacity: 0.7;
+    opacity: 0.6;
+    font-size: 0.9em;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
+        letter-spacing: 4px;
+    }
+    
+    header {
+        padding: 50px 20px 40px;
+    }
+    
+    main {
+        padding: 50px 20px;
     }
     
     .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
     }
     
     .product-image {
-        height: 220px;
+        height: 280px;
+    }
+    
+    .contact-section h2 {
+        font-size: 1.8em;
     }
 }
